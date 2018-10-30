@@ -57,6 +57,8 @@ if len(input_name)>0: #if the users entered a file name
     for item in output :
         handle.write(str(item)[1:len(str(item))-1])
         handle.write('\n')
+    print('The output has been successfully written in output.txt file !')
+        
 
 else:
 
