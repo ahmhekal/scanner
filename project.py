@@ -43,15 +43,14 @@ def get_token(L,index): #L is the line, index is the index of the character to p
 
     else:
         return index+1
-cha=input("please enter 'f' to enter an input file name, or press 'Enter' to write in the console \n")
-if cha=='f': #if the users entered a file name
-    print("please enter the file name")
+file_name=input("please enter an input file name, or press 'Enter' to write in the console \n")
+if len(file_name)>0: #if the users entered a file name
     while True:
-        file_name = input()
         try:
             f = open(file_name, 'r')
         except FileNotFoundError:
             print("Wrong file name,please enter the right name")
+            file_name=input('')
         else:
             break
 
@@ -79,3 +78,4 @@ else: #the user will write directly to the console
     for item in output :
         handle.write(item[1]+', '+item[0]+'\n')
     print('The output has been successfully written in output.txt file !')
+input('press enter to exit')
