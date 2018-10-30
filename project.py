@@ -55,22 +55,18 @@ if len(input_name)>0: #if the users entered a file name
 
     handle = open('output.txt', 'w')
     for item in output :
-        handle.write(str(item)[1:len(str(item))-1])
-        handle.write('\n')
+        handle.write(item[1]+', '+item[0]+'\n')
     print('The output has been successfully written in output.txt file !')
-        
 
-else:
 
-    print("Start Writing !!, enter 'quit' to exit")
-    while(1):
-        output=[]
-        s=input("")
-        s+=" "
-        if s == 'quit ' :
-            break
-        index=0
-        while(index<len(s)):
-            index=( get_token(s,index) )
-        for item in output :
-            print(str(item)[1:len(str(item))-1])
+else: #the user will write directly to the console
+    print("Start Writing !!")
+    s=input("")
+    s+=" "
+    index=0
+    while(index<len(s)):
+        index=( get_token(s,index) )
+    handle = open('output.txt', 'w')
+    for item in output :
+        handle.write(item[1]+', '+item[0]+'\n')
+    print('The output has been successfully written in output.txt file !')

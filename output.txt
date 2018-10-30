@@ -1,32 +1,32 @@
-'reserved word', 'read'
-'identifier', 'x'
-'special symbol', ';'
-'reserved word', 'if'
-'Number', '0'
-'special symbol', '<'
-'identifier', 'x'
-'reserved word', 'then'
-'identifier', 'fact'
-'special symbol', ':='
-'Number', '1'
-'special symbol', ';'
-'reserved word', 'repeat'
-'identifier', 'fact'
-'special symbol', ':='
-'identifier', 'fact'
-'special symbol', '*'
-'identifier', 'x'
-'special symbol', ';'
-'identifier', 'x'
-'special symbol', ':='
-'identifier', 'x'
-'special symbol', '-'
-'Number', '1'
-'reserved word', 'until'
-'identifier', 'x'
-'special symbol', '='
-'Number', '0'
-'special symbol', ';'
-'reserved word', 'write'
-'identifier', 'fact'
-'reserved word', 'end'
+read, reserved word
+x, identifier
+;, special symbol
+if, reserved word
+0, Number
+<, special symbol
+x, identifier
+then, reserved word
+fact, identifier
+:=, special symbol
+1, Number
+;, special symbol
+repeat, reserved word
+fact, identifier
+:=, special symbol
+fact, identifier
+*, special symbol
+x, identifier
+;, special symbol
+x, identifier
+:=, special symbol
+x, identifier
+-, special symbol
+1, Number
+until, reserved word
+x, identifier
+=, special symbol
+0, Number
+;, special symbol
+write, reserved word
+fact, identifier
+end, reserved word
