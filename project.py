@@ -78,4 +78,5 @@ else: #the user will write directly to the console
     for item in output :
         handle.write(item[1]+', '+item[0]+'\n')
     print('The output has been successfully written in output.txt file !')
+handle.close()
 input('press enter to exit')
