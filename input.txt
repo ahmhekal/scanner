@@ -8,3 +8,6 @@ if  0 < x   then     {  don’t compute if x <= 0 }
    until  x  =  0; 
    write  fact   {  output  factorial of x }   
 end 
+ahmed = 25 * 8 + 3;
+if ahmed = (x+5) then { Comment }
+   ahmed := x
